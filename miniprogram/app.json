@@ -1,14 +1,41 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/question/question",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#fc8a2e",
+    "navigationBarTitleText": "雁祉学堂",
+    "navigationBarTextStyle": "white"
   },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#fc8a2e",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/index.png",
+      "selectedIconPath": "assets/index-select.png"
+      },
+      {
+      "pagePath": "pages/question/question",
+      "text": "问答",
+      "iconPath": "assets/question.png",
+      "selectedIconPath": "assets/question-select.png"
+      },
+      {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "assets/mine.png",
+      "selectedIconPath": "assets/mine-select.png"
+      }
+    ]
+  },
+  "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "navigateToMiniProgramAppIdList": ["wxa2c453d902cdd452"]
 }
