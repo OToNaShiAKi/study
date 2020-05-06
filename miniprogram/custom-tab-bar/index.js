@@ -6,12 +6,12 @@ Component({
   data: {
     color: "#808080",
     selectedColor: "#fc8a2e",
-    active: "/pages/index/index",
+    active: "/pages/home/home",
     list: [{
-      pagePath: "/pages/index/index",
+      pagePath: "/pages/home/home",
       text: "首页",
-      iconPath: "/assets/index.png",
-      selectedIconPath: "/assets/index-select.png"
+      iconPath: "/assets/home.png",
+      selectedIconPath: "/assets/home-select.png"
     }, {
       pagePath: "/pages/question/question",
       text: "问答",

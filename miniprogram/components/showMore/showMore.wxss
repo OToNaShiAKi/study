@@ -1,0 +1,12 @@
+/* components/showMore/showMore.wxss */
+.more {
+  margin: 0 auto;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #fc8b2e;
+  border: 1px solid #fc8b2e;
+  box-sizing: border-box;
+  text-align: center
+}

@@ -1,0 +1,45 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="container">
+  <view class="title">—— 全栈直播 ——</view>
+  <image class="live" data-jump="{{liveClass.jump}}" bind:tap="jumpTo" mode="aspectFill" src="{{liveClass.live}}" />
+  <view class="lists">
+    <view class="item" wx:for="{{liveClass.desc}}" wx:key="index">
+      <view class="desc">{{item.title}}</view>
+      <view>
+        <view wx:for="{{item.values}}" wx:for-item="value" wx:for-index="key" wx:key="key">{{key + 1}}. {{value}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="container">
+  <view class="title">—— 免费直播 ——</view>
+  <swiper next-margin="30rpx" bind:change="swiperSwitch">
+    <swiper-item wx:for="{{freeClass}}" wx:key="_id" data-jump="{{item.jump}}" class="swipe" bind:tap="jumpTo">
+      <image mode="aspectFill" src="{{item.live}}" />
+      <text>直播时间：{{item.time}}</text>
+    </swiper-item>
+  </swiper>
+  <view class="comment">
+    <text class="tip">热门\n时评</text>
+    <swiper class="hot" vertical circular autoplay interval="{{2000}}">
+      <swiper-item wx:for="{{freeClass[active].comments}}" wx:key="id" class="textflow">{{item.nick_name}}：{{item.first_comment}}</swiper-item>
+    </swiper>
+  </view>
+</view>
+
+<view class="container">
+  <view class="title">—— 学习路线 ——</view>
+  <stage-card wx:for="{{stageClass}}" wx:key="_id" stage="{{item}}"/>
+  <show-more wx:if="{{more}}" load="{{load}}" bind:tap="loadMore"/>
+</view>
+
+<view class="container">
+  <view class="title">—— 关于学堂 ——</view>
+  <video poster="cloud://hustmaths-kexie.6875-hustmaths-kexie-1301345149/index/1554090027936190.jpg" src="cloud://hustmaths-kexie.6875-hustmaths-kexie-1301345149/home.mp4" class="about"/>
+  <view class="end">—— power by hustmaths ——</view>
+</view>
+
+<button open-type="contact" class="contact">
+  <image src="cloud://hustmaths-kexie.6875-hustmaths-kexie-1301345149/logo.jpg" mode="aspectFill"/>
+</button>

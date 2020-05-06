@@ -1,0 +1,54 @@
+/* components/stageCard/stageCard.wxss */
+.stage {
+  display: flex;
+  font-size: 26rpx;
+  color: #505050;
+  margin-bottom: 12rpx;
+}
+
+.stage .icon {
+  position: relative;
+  margin-right: 12rpx;
+}
+
+.stage .icon image {
+  border-radius: 12rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.stage .icon text {
+  border-radius: 12rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 42rpx;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 160rpx;
+  left: 0;
+  top: 0;
+}
+
+.stage .course {
+  height: 160rpx;
+  flex: 1;
+}
+
+.stage .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stage .course .live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage .course .live image {
+  height: 100%;
+}

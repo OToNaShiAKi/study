@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "stage-card": "/components/stageCard/stageCard",
+    "show-more": "/components/showMore/showMore"
+  },
+  "navigationBarTitleText": "二次元学堂"
+}

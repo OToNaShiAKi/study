@@ -1,0 +1,17 @@
+<!--components/stageCard/stageCard.wxml-->
+<view class="stage">
+  <view class="icon" bind:tap="detail">
+    <image mode="aspectFill" src="{{stage.live}}"/>
+    <text>{{open ? "-" : "+"}}</text>
+  </view>
+  <swiper next-margin="30rpx" wx:if="{{open}}" class="course">
+    <swiper-item wx:for="{{stage.classes}}" wx:key="live" class="live">
+      <image mode="aspectFit" src="{{item.live}}" />
+      <text>课时：{{item.duration}} 讲师：{{item.teacher}}</text>
+    </swiper-item>
+  </swiper>
+  <view wx:else class="list">
+    <view>{{stage.desc.title}}</view>
+    <view wx:for="{{stage.desc.desc}}" wx:key="index">{{index}}. {{item}}</view>
+  </view>
+</view>

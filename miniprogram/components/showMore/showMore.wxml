@@ -1,0 +1,2 @@
+<!--components/showMore/showMore.wxml-->
+<view class="more">{{load ? '加载中...' : '加载更多'}}</view>
