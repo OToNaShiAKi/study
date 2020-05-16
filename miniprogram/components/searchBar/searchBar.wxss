@@ -1,0 +1,21 @@
+/* components/searchBar/searchBar.wxss */
+@import "/app.wxss";
+
+.bar {
+  display: flex;
+  align-items: center;
+  padding: 16rpx 20rpx;
+}
+
+.bar input {
+  flex: 1;
+  font-size: 26rpx;
+  padding: 0 16rpx;
+  border-bottom: 1px solid #fc8b2e;
+}
+
+.bar button {
+  font-size: 36rpx;
+  color: #fc8b2e;
+  background-color: white;
+}

@@ -2,7 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/question/question",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/publish/publish",
+    "pages/questionDetail/questionDetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fc8a2e",
@@ -13,26 +15,33 @@
     "selectedColor": "#fc8a2e",
     "list": [
       {
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "assets/home.png",
-      "selectedIconPath": "assets/home-select.png"
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home-select.png"
       },
       {
-      "pagePath": "pages/question/question",
-      "text": "问答",
-      "iconPath": "assets/question.png",
-      "selectedIconPath": "assets/question-select.png"
+        "pagePath": "pages/question/question",
+        "text": "问答",
+        "iconPath": "assets/question.png",
+        "selectedIconPath": "assets/question-select.png"
       },
       {
-      "pagePath": "pages/mine/mine",
-      "text": "我的",
-      "iconPath": "assets/mine.png",
-      "selectedIconPath": "assets/mine-select.png"
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/mine.png",
+        "selectedIconPath": "assets/mine-select.png"
       }
     ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "navigateToMiniProgramAppIdList": ["wxa2c453d902cdd452"]
+  "navigateToMiniProgramAppIdList": [
+    "wxa2c453d902cdd452"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息将用于小程序位置接口的效果展示"
+    }
+  }
 }

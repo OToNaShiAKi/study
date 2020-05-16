@@ -40,6 +40,4 @@
   <view class="end">—— power by hustmaths ——</view>
 </view>
 
-<button open-type="contact" class="contact">
-  <image src="cloud://hustmaths-kexie.6875-hustmaths-kexie-1301345149/logo.jpg" mode="aspectFill"/>
-</button>
+<button open-type="contact" class="contact iconfont icon-service"></button>

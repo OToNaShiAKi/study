@@ -20,7 +20,6 @@ Page({
     wx.cloud.callFunction({
       name: "getLiveClass"
     }).then(res => {
-      console.log(res);
       let more = this.data.stageClass.length + res.result.stage.classes.length < res.result.stage.count;
       this.setData({
         liveClass: res.result.live,
@@ -37,8 +36,8 @@ Page({
     let jump = event.currentTarget.dataset.jump;
     jump.fail = err => {
       wx.showToast({
-        title: '打开三方小程序失败',
-        icon: 'none'
+        icon: 'none',
+        title: '打开三方小程序失败'
       })
     }
     wx.navigateToMiniProgram(jump);
@@ -59,7 +58,6 @@ Page({
       name: "getStageClass",
       data: { page }
     }).then(res => {
-      console.log(res);
       let classes = res.result.classes
       let more = stageClass.length + classes.length < res.result.count;
       this.setData({

@@ -1,4 +1,9 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "二次元问答"
+  "usingComponents": {
+    "search-bar": "/components/searchBar/searchBar",
+    "user-info": "/components/userInfo/userInfo",
+    "question-card": "/components/questionCard/questionCard"
+  },
+  "navigationBarTitleText": "二次元问答",
+  "enablePullDownRefresh": true
 }

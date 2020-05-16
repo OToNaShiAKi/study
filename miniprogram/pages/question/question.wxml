@@ -1,2 +1,8 @@
 <!--miniprogram/pages/question/question.wxml-->
-<text>miniprogram/pages/question/question.wxml</text>
+<search-bar bind:search="search">
+  <button bind:tap="publish" class="iconfont icon-edit" size="mini"></button>
+</search-bar>
+
+<question-card wx:for="{{questions}}" card="{{item}}" wx:key="_id"/>
+
+<user-info show="{{show}}" bind:info="userInfo"/>

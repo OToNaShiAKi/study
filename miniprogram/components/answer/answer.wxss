@@ -1,0 +1,19 @@
+/* components/answer/answer.wxss */
+.answer {
+  text-align: center;
+  font-size: 26rpx;
+  background-color: white;
+  padding: 0 20rpx 20rpx;
+}
+
+.answer textarea {
+  width: 100%;
+  text-align: left;
+}
+
+.answer button {
+  font-size: 28rpx;
+  color: #fc8b2e;
+  border-color: #fc8b2e;
+  font-weight: normal;
+}

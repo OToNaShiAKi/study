@@ -1,0 +1,2 @@
+<!--miniprogram/pages/questionDetail/questionDetail.wxml-->
+<question-card card="{{card}}" />

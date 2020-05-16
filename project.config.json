@@ -53,9 +53,17 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
+					"name": "问答",
+					"pathName": "pages/question/question",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "发布",
+					"pathName": "pages/publish/publish",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

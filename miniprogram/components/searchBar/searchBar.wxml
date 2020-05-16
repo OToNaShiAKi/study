@@ -1,0 +1,6 @@
+<!--components/searchBar/searchBar.wxml-->
+<view class="bar">
+  <slot />
+  <input placeholder="搜索内容" bind:input="searchKey"/>
+  <button size="mini" class="iconfont icon-search" bind:tap="search"></button>
+</view>

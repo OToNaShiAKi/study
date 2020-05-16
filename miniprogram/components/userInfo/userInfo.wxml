@@ -1,0 +1,8 @@
+<!--components/userInfo/userInfo.wxml-->
+<panel title="授权信息" show="{{show}}">
+  <view class="user">
+    <image class="power" src="cloud://hustmaths-kexie.6875-hustmaths-kexie-1301345149/logo.jpg" />
+    <view>友情提示：此操作需要您的头像、昵称信息，请授权。</view>
+    <button size="mini" plain open-type="getUserInfo" bind:getuserinfo="getUser">确认授权</button>
+  </view>
+</panel>

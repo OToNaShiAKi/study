@@ -1,0 +1,25 @@
+<!--components/questionCard/questionCard.wxml-->
+<view class="user">
+  <image class="avatar" mode="aspectFill" src="{{card.userInfo.avatarUrl}}" />
+  <view class="info">
+    <view class="nick">{{card.userInfo.nickName}}</view>
+    <view>{{card.time}}</view>
+    <view class="iconfont icon-location" wx:if="{{card.userLocation.name || card.userLocation.address}}">{{card.userLocation.name || card.userLocation.address}}</view>
+  </view>
+</view>
+
+<view class="question" bind:tap="pageTo">
+  <view class="desc">{{card.question.desc}}</view>
+  <view class="files">
+    <image mode="aspectFill" wx:for="{{card.question.fileIDs}}" catch:tap="preview" data-src="{{item}}" src="{{item}}" wx:key="index" />
+  </view>
+</view>
+
+<view class="button">
+  <button size="mini" bind:tap="publish" class="iconfont icon-comment"> 回答 ({{count}})</button>
+  <button size="mini" open-type="share" id="{{card._id}}" class="iconfont icon-share"> 分享</button>
+</view>
+
+<answer publishID="{{card._id}}" show="{{answer}}" userInfo="{{userInfo}}"/>
+
+<user-info show="{{show}}" bind:info="userInfo"/>

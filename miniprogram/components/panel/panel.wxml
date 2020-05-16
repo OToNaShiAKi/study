@@ -1,0 +1,8 @@
+<!--components/panel/panel.wxml-->
+<view class="panel" hidden="{{show}}">
+  <view class="header">
+    <text>{{title}}</text>
+    <button class="iconfont icon-close" size="mini" bind:tap=close"></button>
+  </view>
+  <slot />
+</view>

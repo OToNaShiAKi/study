@@ -1,0 +1,22 @@
+<!--miniprogram/pages/publish/publish.wxml-->
+<view class="question">
+  <textarea placeholder="输入问题描述" maxlength="200" class="width" bind:input="getInput"/>
+</view>
+
+<view class="location iconfont icon-location" bind:tap="chooseLocation">
+  <text>{{ userLocation.name || userLocation.address || '点击获取地理位置' }}</text>
+  <i class="iconfont icon-right" />
+</view>
+
+<view class="lists">
+  <view wx:for="{{images}}" wx:key="index" class="pick">
+    <image data-src="{{item}}" bind:tap="preview" src="{{item}}" mode="aspectFill" />
+    <button data-index="{{index}}" bind:tap="remove" class="iconfont icon-close" size="mini"></button>
+  </view>
+  <view wx:if="{{images.length !== 9}}" class="pick" bind:tap="chooseImage">
+    <i class="iconfont icon-photo" />
+  </view>
+</view>
+<text class="hint">单张图片不可超过1M</text>
+
+<button class="submit" bind:tap="publish" plain size="mini" disabled="{{!desc.length}}">发布问题</button>

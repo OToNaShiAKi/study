@@ -12,6 +12,6 @@
   </swiper>
   <view wx:else class="list">
     <view>{{stage.desc.title}}</view>
-    <view wx:for="{{stage.desc.desc}}" wx:key="index">{{index}}. {{item}}</view>
+    <view wx:for="{{stage.desc.desc}}" wx:key="index">{{index + 1}}. {{item}}</view>
   </view>
 </view>

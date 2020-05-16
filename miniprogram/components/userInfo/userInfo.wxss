@@ -1,0 +1,25 @@
+/* components/userInfo/userInfo.wxss */
+.user {
+  text-align: center;
+  font-size: 26rpx;
+  background-color: white;
+  padding-bottom: 20rpx;
+}
+
+.user .power {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.user view {
+  margin: 12rpx 0;
+  line-height: 50rpx;
+}
+
+.user button {
+  font-size: 28rpx;
+  color: #fc8b2e;
+  border-color: #fc8b2e;
+  font-weight: normal;
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "user-info": "./../userInfo/userInfo",
+    "answer": "./../answer/answer"
+  }
+}
