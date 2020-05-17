@@ -1,0 +1,2 @@
+<!--miniprogram/pages/myData/myData.wxml-->
+<question-card wx:for="{{mine}}" wx:key="_id" card="{{item}}" />

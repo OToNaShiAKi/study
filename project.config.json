@@ -64,6 +64,20 @@
 					"pathName": "pages/publish/publish",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "详情页",
+					"pathName": "pages/questionDetail/questionDetail",
+					"query": "_id=e2297d935ebe27f600abca045177f808",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

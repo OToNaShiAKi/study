@@ -38,6 +38,8 @@ Component({
           icon: 'none',
           title: res.result.message,
         })
+        wx.startPullDownRefresh();
+        this.setData({ comment: '' })
         this.setData({ show: true })
       }).catch(err => {
         wx.hideLoading();

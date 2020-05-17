@@ -1,0 +1,11 @@
+<!--components/commentCard/commentCard.wxml-->
+<view>
+  <view class="user">
+    <image class="avatar" mode="aspectFill" src="{{comment.userInfo.avatarUrl}}" />
+    <view class="info">
+      <view class="nick">{{comment.userInfo.nickName}}</view>
+      <view>{{comment.time}}</view>
+    </view>
+  </view>
+  <view class="comment">{{comment.comment}}</view>
+</view>

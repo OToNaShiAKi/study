@@ -12,12 +12,14 @@ exports.main = async (event, context) => {
   return await cloud.openapi.security.msgSecCheck({ content: comment }).then(res => {
     const db = cloud.database();
     const comments = db.collection('comments');
+    const _openid = cloud.getWXContext().OPENID
     return comments.add({
       data: {
         comment,
         userInfo,
         publishID,
-        time: db.serverDate()
+        time: db.serverDate(),
+        _openid
       }
     })
   }).then(res => ({

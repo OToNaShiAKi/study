@@ -6,6 +6,7 @@
   width: 100%;
   box-sizing: border-box;
   bottom: 0;
+  z-index: 999;
 }
 
 .panel::before {

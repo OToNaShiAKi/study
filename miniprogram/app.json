@@ -4,7 +4,8 @@
     "pages/question/question",
     "pages/mine/mine",
     "pages/publish/publish",
-    "pages/questionDetail/questionDetail"
+    "pages/questionDetail/questionDetail",
+    "pages/myData/myData"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fc8a2e",

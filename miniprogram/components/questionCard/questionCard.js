@@ -15,7 +15,7 @@ Component({
           }).watch({
             onChange: snapshot => {
               let count = snapshot.docs.length;
-              if (count > 10000) 
+              if (count > 10000)
                 count = Math.floor(count / 10000) + 'w+'
               else if (count > 1000)
                 count = Math.floor(count / 1000) + 'k+'

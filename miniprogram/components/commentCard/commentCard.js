@@ -1,10 +1,10 @@
-// components/comments/comments.js
+// components/commentCard/commentCard.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    comment: Object
   },
 
   /**

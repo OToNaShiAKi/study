@@ -1,0 +1,29 @@
+/* components/commentCard/commentCard.wxss */
+.user {
+  display: flex;
+  padding: 20rpx 20rpx 0;
+  align-items: center;
+}
+
+.user .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+
+.user .info view {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.user .info .nick {
+  color: #555;
+  font-size: 26rpx;
+}
+
+.comment {
+  font-size: 26rpx;
+  color: #444;
+  padding: 10rpx 20rpx 0;
+}

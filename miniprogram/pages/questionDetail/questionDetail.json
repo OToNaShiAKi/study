@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "question-card": "/components/questionCard/questionCard"
-  }
+    "question-card": "/components/questionCard/questionCard",
+    "comment-card": "/components/commentCard/commentCard"
+  },
+  "navigationBarTitleText": "问答详情",
+  "enablePullDownRefresh": true
 }

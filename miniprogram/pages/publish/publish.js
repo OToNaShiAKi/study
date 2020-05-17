@@ -16,7 +16,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad (options) {
     const channel = this.getOpenerEventChannel();
     channel.on && channel.on('userInfo', userInfo => {
       this.setData({ userInfo })

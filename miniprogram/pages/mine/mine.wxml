@@ -1,2 +1,27 @@
 <!--miniprogram/pages/mine/mine.wxml-->
-<search-bar />
+<view class="user">
+  <view class="avatar">
+    <open-data type="userAvatarUrl"/>
+  </view>
+  <view class="nick">
+    <open-data type="userNickName"/>
+  </view>
+</view>
+
+<view class="lists">
+  <view id="publish" bind:tap="pageTo" class="iconfont icon-question">
+    <text decode>&nbsp;&nbsp;</text>
+    我的提问
+    <i class="iconfont icon-right" />
+  </view>
+  <view id="comment" bind:tap="pageTo" class="iconfont icon-comment">
+    <text decode>&nbsp;&nbsp;</text>
+    我的回答
+    <i class="iconfont icon-right" />
+  </view>
+  <view bind:tap="qrcode" class="iconfont icon-share">
+    <text decode>&nbsp;&nbsp;</text>
+    推荐小程序
+    <i class="iconfont icon-right" />
+  </view>
+</view>

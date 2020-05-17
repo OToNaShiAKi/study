@@ -1,2 +1,3 @@
 <!--miniprogram/pages/questionDetail/questionDetail.wxml-->
 <question-card card="{{card}}" />
+<comment-card wx:for="{{comments}}" comment="{{item}}" wx:key="_id" />

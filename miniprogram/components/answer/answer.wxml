@@ -1,7 +1,7 @@
 <!--components/answer/answer.wxml-->
 <panel title="回答面板" show="{{show}}">
   <view class="answer">
-    <textarea placeholder="输入回答内容" bind:input="getInput" maxlength="200" />
+    <textarea value="{{comment}}" placeholder="输入回答内容" bind:input="getInput" maxlength="200" />
     <button bind:tap="publish" size="mini" plain disabled="{{!comment.length}}">提交回答</button>
   </view>
 </panel>

@@ -26,6 +26,7 @@ exports.main = async (event, context) => {
   return await Promise.all(checks).then(res => {
     const db = cloud.database();
     const questions = db.collection('questions');
+    const _openid = cloud.getWXContext().OPENID
     return questions.add({
       data: {
         userInfo,
@@ -36,7 +37,8 @@ exports.main = async (event, context) => {
           fileIDs
         },
         system,
-        time: db.serverDate()
+        time: db.serverDate(),
+        _openid
       }
     })
   }).then(res => ({
